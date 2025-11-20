@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Road Safety Insights</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="COS30045 Assignment 2">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Janice Yeoh Shu Yi, Kok Zi Yan">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animations.css" rel="stylesheet">
+<script src="js/animations.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://d3js.org/topojson.v3.min.js"></script>
+<script src="js/shared-constants.js"></script>
+<script src="js/map.js"></script>
+<script src="js/sunburst.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/load-data.js"></script>
+</head>
+<body>
+<header>
+  <h1>Road Safety <span>Insights</span></h1>
+  <nav>
+    <ul>
+      <li><a href="#top" title="Home">Home</a></li>
+      <li><a href="#mapVis" title="Fatalities">Fatalities</a></li>
+      <li><a href="#sunburstVis" title="Hospitalisations">Hospitalisations</a></li>
+      <li><a href="#dashboardVis" title="Seasonal Trends">Seasonal Trends</a></li>
+      <li><a href="#sourcesAndRefs" title="Sources and References">Sources and References</a></li>
+    </ul>
+</nav>
+</header>  
+<main>
+  <div class="main-banner" id="top">
+    <div class="container banner-content">
+      <div class="left-content">
+        <h6>Welcome to Road Safety Insights</h6>
+        <h2>Interactive <em>Visualisations</em> &amp; <span>Analytics</span></h2>
+        <p>Explore official Australian road safety data using interactive charts, maps, and dashboards. Gain insights into fatalities, injuries, and risk factors for informed decision-making.</p>
+      </div>
+      <div class="right-image">
+        <img src="assets/banner.png" alt="Road Safety Illustration">
+      </div>
+    </div>
+  </div>
+  <article>
+    <h2 class="gs_reveal">Website Overview</h2>
+    <p class="gs_reveal">This website is developed to provide the public with clear, 
+        accessible insights into road safety trends across Australia. This platform presents official data on road fatalities 
+        and injuries through interactive charts and maps, allowing users to explore patterns by location, age, gender, and vehicle type. 
+        By making this information easily understandable, the website aims to promote transparency, raise awareness of key risk factors, 
+        and support evidence-based initiatives to improve road safety nationwide.</p>
+    <hr>
+    <section class="visDesc" id="mapVis">
+      <h3 class="gs_reveal">Number of Fatalities by <span>States in Australia</span></h3>
+      <p class="gs_reveal">This interactive heatmap visualizes the number of road fatalities across Australian states in Australia. 
+        The color intensity of each state represents the number of fatalities, with darker shades indicating higher counts, 
+        allowing you to quickly identify regions with elevated road safety risks.</p>
+      <p class="gs_reveal"><strong>How to use:</strong> Hover over a state to see detailed fatality numbers for that location. 
+        Click on any state to highlight it and the corresponding range on the legend, helping you compare the severity 
+        relative to other states. Use the year slider above the map to filter the data and observe changes over time. 
+        This interactivity allows you to explore trends geographically and temporally for better insights into regional road safety patterns. 
+        The play button allows you to go though an animation of the fatalities through the years.</p>
+      <div class="visualisation aside-side">
+        <div class="visualisation-content">
+          <div id="map">
+            <div class="visualisation-filters" id="mapfilter">
+              <div id="filters_screen">
+              </div>
+            </div>
+          </div>
+          <aside>
+            <h2 class="gs_reveal">Analysis</h2>
+            <p class="gs_reveal">This choropleth map provides a geographic overview of road fatalities across Australian 
+              states for the selected year. States with darker shades indicate higher numbers of fatalities, 
+              while lighter shades indicate lower incidence. New South Wales and Victoria consistently 
+              exhibit elevated fatality rates, likely due to their larger populations, high traffic density, 
+              and extensive road networks. Queensland also shows a significant number of fatalities, 
+              possibly linked to both urban and rural traffic risks. Smaller states and territories, 
+              such as Tasmania and the Northern Territory, record fewer fatalities, which may reflect their 
+              lower population density and traffic volume. By presenting the data geographically, 
+              this visualisation highlights regional disparities in road safety, allowing policymakers and 
+              transport authorities to prioritize interventions, allocate resources efficiently, and design 
+              targeted safety campaigns where they are most needed. Moreover, trends observed over multiple 
+              years can help identify whether interventions are effective in reducing fatalities in high-risk regions.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="visDesc" id="sunburstVis">
+      <h3 class="gs_reveal">Number of Hospitalisations by <span>Road Users in Australia</span></h3>
+      <p class="gs_reveal">This interactive sunburst chart visualizes the distribution of road-related hospitalizations 
+        across different road user categories in Australia from 2011 to 2021. The hierarchical structure allows you to 
+        explore patterns by gender and age groups, revealing which demographics are most affected by 
+        road incidents requiring hospitalization.</p>
+      <p class="gs_reveal"><strong>How to use:</strong> Click on any segment to zoom in and explore that category in detail. 
+        Click the center to zoom back out. Hover over segments to see detailed hospitalization numbers. 
+        Use the filters below to add demographic breakdowns to your analysis.</p>
+      <div class="visualisation aside-side">
+        <div class="visualisation-content">
+          <div id="sunburst"></div>
+          <aside>
+            <h2 class="gs_reveal">Analysis</h2>
+            <p class="gs_reveal">The sunburst chart illustrates hospitalised injuries by road user categories, including car drivers, 
+              motorcyclists, pedestrians, and other classifications. Users can filter the data by gender or age group, 
+              enabling a detailed exploration of risk patterns among different demographics. The chart reveals that 
+              certain groups, such as middle age and male road users, experience a higher proportion of injuries, 
+              which may correlate with risk-taking behaviors, higher exposure to traffic, or other socio-behavioral 
+              factors. The aggregate toggle provides a broader view of the relative contributions of each road user 
+              category to hospitalisations, emphasizing the distribution of injuries across the population. Such 
+              insights are valuable for targeted policy development, public education campaigns, and road safety programs. 
+              For instance, interventions could focus on high-risk groups identified by age or gender, while 
+              infrastructure improvements could be prioritized in areas with higher car driver or motorcyclist injuries. 
+              This visualisation thus helps stakeholders understand the multidimensional nature of road injuries beyond fatality statistics.</p>
+          </aside>
+        </div>
+        <div class="visualisation-filters">
+          <br>
+          <h4>Filters:</h4>
+          <div class="sunburstfilter">
+            <div id="sunburstControls">
+              <label class="custom-checkbox"><input type="checkbox" class="filterCheck" value="gender"><span class="checkmark"></span> Gender</label>
+              <label class="custom-checkbox"><input type="checkbox" class="filterCheck" value="age"><span class="checkmark"></span> Age Group</label>
+            </div>
+            <div class="aggregate-toggle">
+              <label class="custom-checkbox" for="aggregateToggle"><input type="checkbox" id="aggregateToggle" checked><span class="checkmark"></span> Aggregate roaduser categories</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="visDesc" id="dashboardVis">
+      <h3 class="gs_reveal">Seasonal Trends <span>Dashboard</span></h3>
+      <p class="gs_reveal">This interactive dashboard provides a multi-layered view of road-related incidents in Australia, enabling users 
+        to explore how incident patterns change across years, months, days of the week, and times of day. The dashboard 
+        aggregates data from 2000 to 2025, offering both high-level trends and detailed temporal insights to support road 
+        safety analysis and decision-making.</p>
+      <p class="gs_reveal">The four coordinated visualisations reveal complementary aspects of incident behaviour: a yearly bar chart highlights 
+        long-term trends; a monthly line chart shows seasonal variations; a day-of-week bar chart uncovers weekly behavioural 
+        patterns; and a time-of-day scatterplot exposes peak times for incident occurrences.</p>
+      <p class="gs_reveal"><strong>How to use:</strong> Click any bar in the yearly incidents chart to filter the entire dashboard by that specific 
+        year. All charts will update automatically. Use the dropdown menu to select a year manually or click the reset button to 
+        return to the full dataset. Hover over any point or bar to view detailed incident counts.</p>
+      <div class="visualisation">
+        <div class="filter_screen" id="yearDropdown-wrapper">
+          <label for="yearDropdown">Filter by Year:</label>
+          <select id="yearDropdown">
+            <option value="all">All Years</option>
+          </select>
+        </div>
+        <button id="resetButton">Reset View</button>
+        <div class="dashboard-container">
+          <div class="dashboard-row">
+            <div id="dayofweekchart" class="dashboard"></div>
+            <div id="scatterplot" class="dashboard"></div>
+          </div>
+          <div class="dashboard-row"> 
+            <div id="linechart" class="dashboard"></div>
+            <div id="year_barchart" class="dashboard"></div>
+          </div>
+        </div>
+        <aside>
+          <h2 class="gs_reveal">Analysis</h2>
+            <p class="gs_reveal">The seasonal trends dashboard offers a comprehensive analysis of temporal patterns in road fatalities and injuries across Australia. 
+              The line chart shows fluctuations in fatalities by month, highlighting periods with higher risk, often coinciding with holiday seasons, 
+              extreme weather conditions, or increased travel. The day-of-week chart further identifies trends, showing that weekends and public 
+              holidays typically have elevated fatality rates, likely due to increased recreational travel and alcohol-related incidents. The scatterplot 
+              displays incidents by time of day (0000h-2359h), revealing peak periods such as evening traffic hours. Additionally, the year-based
+              bar chart enables comparisons across years to identify trends and evaluate the impact of safety interventions over time. Collectively, 
+              these visualisations support evidence-based decision-making by highlighting high-risk periods and groups, enabling authorities to adjust 
+              traffic enforcement, road safety campaigns, and public awareness initiatives to reduce fatalities and hospitalisations.</p>
+        </aside>
+      </div>
+    </section>
+    <hr>
+    <section class="ref" id="sourcesAndRefs">
+      <h2 class="gs_reveal">Sources &amp; <span>References</span></h2>
+      <div class="sources">
+        <h3 class="gs_reveal">Data Sources</h3>
+        <p class="gs_reveal">The data used in this website is sourced from the Bureau of Infrastructure and Transport Research Economics (BITRE), 
+          an Australian government agency that provides independent research and analysis on transport infrastructure and economics. 
+          BITRE collects and maintains comprehensive datasets on road safety, including fatal road crashes and hospitalised injuries, 
+          which are utilized in this project to provide insights into road safety trends across Australia.</p>
+        <ul class="gs_reveal">
+          <li><a href="https://www.bitre.gov.au/statistics/safety/fatal_road_crash_database" target="_blank" rel="noopener">BITRE - Australian Road Deaths Database</a></li>
+          <li><a href="https://www.bitre.gov.au/publications/ongoing/hospitalised-injury" target="_blank" rel="noopener">BITRE - Hospitalised Injury</a></li>
+        </ul>
+        <p class="gs_reveal">The data was then cleaned and processed through KNIME to create the usable datasets for our project.</p>
+        <img src="assets/knimeWorkflow.jpg" alt="KNIME Workflow" class="knime">
+      </div>
+      <div class="references">
+        <h3 class="gs_reveal">References</h3>
+        <p class="gs_reveal">The code created for this website and its visualisations have been referenced through multiple sources.</p>
+        <ul class="gs_reveal">
+          <li><a href="https://freefrontend.com/javascript-scroll-effects/#google_vignette" target="_blank" rel="noopener">FreeFrontend - Scroll-Based Reveal Animations with ScrollTrigger</a></li>
+          <li><a href="https://templatemo.com/tm-562-space-dynamic" target="_blank" rel="noopener">templatemo - Space Dynamic Template</a></li>
+          <li><a href="https://observablehq.com/@d3/us-state-choropleth/2" target="_blank" rel="noopener">Observable - D3 Gallery: U.S. State Choropleth</a></li>
+          <li><a href="https://observablehq.com/@d3/zoomable-sunburst" target="_blank" rel="noopener">Observable - D3 Gallery: Zoomable Sunburst</a></li>
+        </ul>
+        <p class="gs_reveal">Our map choropleth visualisation uses a library sourced from GitHub to create the map for Australia</p>
+        <ul class="gs_reveal">
+          <li><a href="https://github.com/rowanhogan/australian-states/blob/master/states.geojson" target="_blank" rel="noopener">GitHub - rowanhogan/australian-states/states.geojson</a></li>
+        </ul>
+        <img src="assets/observable.png" alt="Observable" class="observable">
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <p>&copy; COS30045 Group 19 AUG2025</p>
+</footer>
+</body>
+</html>
