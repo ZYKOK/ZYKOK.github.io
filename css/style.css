@@ -1,0 +1,617 @@
+/* =============================
+   RESET & BASE STYLES
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s;
+  position: relative;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #0077cc;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* =============================
+   HEADER & NAVIGATION
+============================= */
+header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: rgb(51, 153, 255);
+  margin-bottom: 0.5rem;
+}
+
+header h1 span {
+  color: #ffd633;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+}
+
+nav ul li a:hover {
+  color: #005fa3;
+  border-bottom: 2px solid #0077cc;
+}
+
+/* =============================
+   MAIN BANNER
+============================= */
+.main-banner {
+  background: linear-gradient(rgba(97, 95, 4, 0.3), rgba(3, 83, 6, 0.3)), url('../assets/images/banner.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 6rem 2rem;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.left-content {
+    padding-left: 8rem;
+  flex: 1;
+}
+
+.right-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.main-banner h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  animation-delay: 0.1s;
+}
+
+.main-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation-delay: 0.3s;
+}
+
+.main-banner h2 em {
+  color: #ffd633;
+  font-style: normal;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.main-banner h2 span {
+  color: #18996e;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.main-banner p {
+  max-width: 600px;
+  line-height: 1.6;
+  animation-delay: 0.5s;
+}
+
+.main-banner h2, .main-banner h6, .main-banner p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* =============================
+   ARTICLE & SECTIONS
+============================= */
+article {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+
+article h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+span {
+  color: #ffd633;
+}
+
+article hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 2rem 0;
+}
+
+.visDesc {
+  margin-top: 3rem;
+  scroll-margin-top: 100px;
+}
+
+.visDesc h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.visDesc p {
+  margin-bottom: 1rem;
+}
+
+/* =============================
+   VISUALISATIONS
+============================= */
+.visualisation {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  max-width: 100%;
+}
+
+
+
+/* Filters on top of visualisation */
+.visualisation-filters {
+  margin-bottom: 1rem;
+}
+
+/* Chart + aside side by side */
+.visualisation-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: fit-content;
+}
+
+.visualisation-content div,
+.visualisation-content aside {
+  flex: 1;
+}
+
+aside {
+  max-width: 30;
+  height: fit-content;
+  margin-top: 0;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+
+.visualisation-content aside:hover {
+  background-color: #f0f8ff;
+  transform: translateX(2px);
+}
+
+/* Dashboard charts remain stacked (no aside-side) */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  flex: 1 1 45%;
+  min-height: 300px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  padding: 1rem;
+  padding-bottom: 25em;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.dashboard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #e6f2ff;
+}
+
+/* New styles for dashboard layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between rows */
+  padding: 20px;
+}
+
+.dashboard-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dashboard {
+  flex: 1;
+  min-width: 0; /* Prevents overflow */
+  height: 400px; /* Base height for charts, can be adjusted */
+}
+
+@media screen and (max-width: 768px) {
+  .dasboard-row {
+    flex-direction: column;
+  }
+
+  .dasboard {
+    width: 100%; /* Full width on smaller screens */
+    height: 300px; /* Adjusted height for smaller screens */
+  }
+}
+
+/* Map & Sunburst containers hover */
+#map, #sunburst {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+}
+
+#map:hover, #sunburst:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Filters & controls */
+#sunburstControls label,
+.aggregate-toggle label {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sunburstfilter, #sunburstControls, .aggregate-toggle {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#sunburstfilter {
+  padding-top: 1em;
+}
+
+/* Base label */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  user-select: none;
+  margin-right: 15px;
+  position: relative;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox square */
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 4px; /* rounded corners */
+  margin-right: 8px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+}
+
+/* Checkmark indicator */
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  display: block;
+}
+
+/* Hover effect */
+.custom-checkbox:hover .checkmark {
+  background-color: #e6f0ff;
+}
+
+
+/* Reset button */
+#resetButton {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#resetButton:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Style the select box */
+#yearDropdown {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  appearance: none; /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 0.2s ease;
+  min-width: 130px;
+}
+
+/* Hover and focus effects */
+#yearDropdown:hover {
+  border-color: #0056b3;
+  background-color: #f0f8ff;
+}
+
+#yearDropdown:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Custom arrow using a pseudo-element */
+#yearDropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#yearDropdown-wrapper::after {
+  content: "▼"; /* arrow icon */
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #007bff;
+  font-size: 12px;
+}
+
+/* === Sources & References Section === */
+.ref {
+  background: #f7f9fc;
+  padding-top: 0;
+}
+
+.ref .sources,
+.ref .references {
+  width: 90%;
+  max-width: 1100px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.ref h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+.ref h2 span {
+  color: #007bff;
+}
+
+.ref p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.ref ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.ref ul li {
+  margin-bottom: 10px;
+}
+
+.ref ul li a {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.ref ul li a:hover {
+  text-decoration: underline;
+}
+
+.knime, .observable {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Make layout side-by-side on large screens */
+@media (min-width: 900px) {
+  .ref {
+    display: flex;
+    justify-content: center;
+    gap: 40px;;
+  }
+
+  .ref h2 {
+    text-align: left;
+    flex: 0;
+  }
+
+  .ref .sources,
+  .ref .references {
+    width: 48%;
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+
+/* =============================
+   FOOTER
+============================= */
+footer {
+  background-color: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 1024px) {
+  .dashboard-row {
+    flex-direction: column;
+  }
+
+  .dashboard {
+    flex: 1 1 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-image img {
+    max-width: 80%;
+    margin-top: 1.5rem;
+  }
+
+  .visualisation-content {
+    flex-direction: column;
+  }
+
+  .visualisation-content > aside {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .main-banner h2 {
+    font-size: 2rem;
+  }
+
+  .dashboard:hover {
+    transform: none;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  #map:hover, #sunburst:hover {
+    transform: none;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .main-banner h2 em, .main-banner h2 span {
+    transform: none;
+  }
+}
