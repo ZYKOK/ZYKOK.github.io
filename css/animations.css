@@ -1,0 +1,33 @@
+.main-banner h2, .main-banner h6, .main-banner p,
+article section, footer {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.main-banner h6 { animation-delay: 0.1s; }
+.main-banner h2 { animation-delay: 0.3s; }
+.main-banner p { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gs_reveal {
+  opacity: 0;
+  transform: translateY(50px); /* start slightly below */
+  
+}
+
+.gs_reveal.active {
+  opacity: 1;
+  transform: translateY(0); /* move to original position */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.spacer {
+  height: 100vh;
+}
