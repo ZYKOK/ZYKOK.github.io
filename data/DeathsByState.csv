@@ -1,0 +1,297 @@
+"State","Year","Count*(CrashID)"
+"Australian Capital Territory",1989,32
+"Australian Capital Territory",1990,26
+"Australian Capital Territory",1991,17
+"Australian Capital Territory",1992,20
+"Australian Capital Territory",1993,12
+"Australian Capital Territory",1994,17
+"Australian Capital Territory",1995,10
+"Australian Capital Territory",1996,23
+"Australian Capital Territory",1997,17
+"Australian Capital Territory",1998,20
+"Australian Capital Territory",1999,15
+"Australian Capital Territory",2000,18
+"Australian Capital Territory",2001,16
+"Australian Capital Territory",2002,10
+"Australian Capital Territory",2003,11
+"Australian Capital Territory",2004,9
+"Australian Capital Territory",2005,26
+"Australian Capital Territory",2006,13
+"Australian Capital Territory",2007,14
+"Australian Capital Territory",2008,14
+"Australian Capital Territory",2009,12
+"Australian Capital Territory",2010,19
+"Australian Capital Territory",2011,6
+"Australian Capital Territory",2012,12
+"Australian Capital Territory",2013,7
+"Australian Capital Territory",2014,10
+"Australian Capital Territory",2015,15
+"Australian Capital Territory",2016,10
+"Australian Capital Territory",2017,5
+"Australian Capital Territory",2018,9
+"Australian Capital Territory",2019,6
+"Australian Capital Territory",2020,7
+"Australian Capital Territory",2021,11
+"Australian Capital Territory",2022,17
+"Australian Capital Territory",2023,4
+"Australian Capital Territory",2024,11
+"Australian Capital Territory",2025,2
+"New South Wales",1989,950
+"New South Wales",1990,794
+"New South Wales",1991,659
+"New South Wales",1992,645
+"New South Wales",1993,578
+"New South Wales",1994,646
+"New South Wales",1995,617
+"New South Wales",1996,580
+"New South Wales",1997,568
+"New South Wales",1998,546
+"New South Wales",1999,576
+"New South Wales",2000,602
+"New South Wales",2001,523
+"New South Wales",2002,560
+"New South Wales",2003,537
+"New South Wales",2004,509
+"New South Wales",2005,505
+"New South Wales",2006,496
+"New South Wales",2007,435
+"New South Wales",2008,373
+"New South Wales",2009,454
+"New South Wales",2010,404
+"New South Wales",2011,364
+"New South Wales",2012,368
+"New South Wales",2013,333
+"New South Wales",2014,306
+"New South Wales",2015,350
+"New South Wales",2016,380
+"New South Wales",2017,389
+"New South Wales",2018,347
+"New South Wales",2019,353
+"New South Wales",2020,284
+"New South Wales",2021,275
+"New South Wales",2022,281
+"New South Wales",2023,340
+"New South Wales",2024,327
+"New South Wales",2025,270
+"Northern Territory",1989,61
+"Northern Territory",1990,68
+"Northern Territory",1991,67
+"Northern Territory",1992,54
+"Northern Territory",1993,44
+"Northern Territory",1994,41
+"Northern Territory",1995,61
+"Northern Territory",1996,72
+"Northern Territory",1997,57
+"Northern Territory",1998,68
+"Northern Territory",1999,49
+"Northern Territory",2000,47
+"Northern Territory",2001,50
+"Northern Territory",2002,55
+"Northern Territory",2003,47
+"Northern Territory",2004,35
+"Northern Territory",2005,49
+"Northern Territory",2006,44
+"Northern Territory",2007,56
+"Northern Territory",2008,73
+"Northern Territory",2009,31
+"Northern Territory",2010,50
+"Northern Territory",2011,45
+"Northern Territory",2012,45
+"Northern Territory",2013,37
+"Northern Territory",2014,36
+"Northern Territory",2015,47
+"Northern Territory",2016,45
+"Northern Territory",2017,31
+"Northern Territory",2018,46
+"Northern Territory",2019,36
+"Northern Territory",2020,30
+"Northern Territory",2021,33
+"Northern Territory",2022,48
+"Northern Territory",2023,27
+"Northern Territory",2024,60
+"Northern Territory",2025,25
+"Queensland",1989,428
+"Queensland",1990,399
+"Queensland",1991,395
+"Queensland",1992,415
+"Queensland",1993,395
+"Queensland",1994,418
+"Queensland",1995,456
+"Queensland",1996,385
+"Queensland",1997,360
+"Queensland",1998,277
+"Queensland",1999,310
+"Queensland",2000,317
+"Queensland",2001,322
+"Queensland",2002,321
+"Queensland",2003,310
+"Queensland",2004,310
+"Queensland",2005,327
+"Queensland",2006,335
+"Queensland",2007,360
+"Queensland",2008,328
+"Queensland",2009,330
+"Queensland",2010,249
+"Queensland",2011,266
+"Queensland",2012,280
+"Queensland",2013,270
+"Queensland",2014,222
+"Queensland",2015,243
+"Queensland",2016,250
+"Queensland",2017,246
+"Queensland",2018,244
+"Queensland",2019,218
+"Queensland",2020,278
+"Queensland",2021,276
+"Queensland",2022,293
+"Queensland",2023,271
+"Queensland",2024,291
+"Queensland",2025,221
+"South Australia",1989,222
+"South Australia",1990,226
+"South Australia",1991,184
+"South Australia",1992,165
+"South Australia",1993,218
+"South Australia",1994,159
+"South Australia",1995,179
+"South Australia",1996,180
+"South Australia",1997,148
+"South Australia",1998,168
+"South Australia",1999,151
+"South Australia",2000,166
+"South Australia",2001,153
+"South Australia",2002,154
+"South Australia",2003,156
+"South Australia",2004,137
+"South Australia",2005,146
+"South Australia",2006,117
+"South Australia",2007,124
+"South Australia",2008,99
+"South Australia",2009,119
+"South Australia",2010,118
+"South Australia",2011,103
+"South Australia",2012,93
+"South Australia",2013,97
+"South Australia",2014,108
+"South Australia",2015,102
+"South Australia",2016,86
+"South Australia",2017,100
+"South Australia",2018,80
+"South Australia",2019,114
+"South Australia",2020,93
+"South Australia",2021,99
+"South Australia",2022,71
+"South Australia",2023,117
+"South Australia",2024,88
+"South Australia",2025,64
+"Tasmania",1989,80
+"Tasmania",1990,71
+"Tasmania",1991,77
+"Tasmania",1992,74
+"Tasmania",1993,58
+"Tasmania",1994,58
+"Tasmania",1995,57
+"Tasmania",1996,64
+"Tasmania",1997,32
+"Tasmania",1998,47
+"Tasmania",1999,53
+"Tasmania",2000,43
+"Tasmania",2001,61
+"Tasmania",2002,37
+"Tasmania",2003,40
+"Tasmania",2004,58
+"Tasmania",2005,51
+"Tasmania",2006,55
+"Tasmania",2007,45
+"Tasmania",2008,39
+"Tasmania",2009,63
+"Tasmania",2010,31
+"Tasmania",2011,24
+"Tasmania",2012,31
+"Tasmania",2013,36
+"Tasmania",2014,33
+"Tasmania",2015,34
+"Tasmania",2016,37
+"Tasmania",2017,32
+"Tasmania",2018,31
+"Tasmania",2019,29
+"Tasmania",2020,38
+"Tasmania",2021,35
+"Tasmania",2022,50
+"Tasmania",2023,32
+"Tasmania",2024,30
+"Tasmania",2025,35
+"Victoria",1989,776
+"Victoria",1990,547
+"Victoria",1991,502
+"Victoria",1992,393
+"Victoria",1993,434
+"Victoria",1994,376
+"Victoria",1995,415
+"Victoria",1996,415
+"Victoria",1997,376
+"Victoria",1998,387
+"Victoria",1999,382
+"Victoria",2000,405
+"Victoria",2001,440
+"Victoria",2002,396
+"Victoria",2003,328
+"Victoria",2004,342
+"Victoria",2005,345
+"Victoria",2006,335
+"Victoria",2007,332
+"Victoria",2008,302
+"Victoria",2009,288
+"Victoria",2010,287
+"Victoria",2011,287
+"Victoria",2012,282
+"Victoria",2013,243
+"Victoria",2014,248
+"Victoria",2015,252
+"Victoria",2016,290
+"Victoria",2017,254
+"Victoria",2018,212
+"Victoria",2019,264
+"Victoria",2020,205
+"Victoria",2021,227
+"Victoria",2022,236
+"Victoria",2023,293
+"Victoria",2024,278
+"Victoria",2025,218
+"Western Australia",1989,241
+"Western Australia",1990,196
+"Western Australia",1991,206
+"Western Australia",1992,200
+"Western Australia",1993,204
+"Western Australia",1994,209
+"Western Australia",1995,209
+"Western Australia",1996,246
+"Western Australia",1997,195
+"Western Australia",1998,222
+"Western Australia",1999,218
+"Western Australia",2000,212
+"Western Australia",2001,165
+"Western Australia",2002,178
+"Western Australia",2003,180
+"Western Australia",2004,178
+"Western Australia",2005,163
+"Western Australia",2006,200
+"Western Australia",2007,235
+"Western Australia",2008,204
+"Western Australia",2009,191
+"Western Australia",2010,192
+"Western Australia",2011,179
+"Western Australia",2012,183
+"Western Australia",2013,157
+"Western Australia",2014,181
+"Western Australia",2015,160
+"Western Australia",2016,193
+"Western Australia",2017,156
+"Western Australia",2018,154
+"Western Australia",2019,161
+"Western Australia",2020,154
+"Western Australia",2021,163
+"Western Australia",2022,171
+"Western Australia",2023,153
+"Western Australia",2024,185
+"Western Australia",2025,132

@@ -1,0 +1,141 @@
+"Age_Group","Gender","Road_User","Sum(Hospitalisations)"
+"0-7","Female","Bus occupant",17
+"0-7","Female","Car driver",21
+"0-7","Female","Car passenger",1693
+"0-7","Female","Car unknown position",80
+"0-7","Female","Heavy transport",9
+"0-7","Female","Motorcyclist",96
+"0-7","Female","Other or unknown",63
+"0-7","Female","Pedal cyclist",734
+"0-7","Female","Pedestrian",497
+"0-7","Female","Pick-up truck or van occupant",14
+"0-7","Male","Bus occupant",22
+"0-7","Male","Car driver",22
+"0-7","Male","Car passenger",1684
+"0-7","Male","Car unknown position",69
+"0-7","Male","Heavy transport",6
+"0-7","Male","Motorcyclist",283
+"0-7","Male","Other or unknown",100
+"0-7","Male","Pedal cyclist",1554
+"0-7","Male","Pedestrian",937
+"0-7","Male","Pick-up truck or van occupant",21
+"17-25","Female","Bus occupant",109
+"17-25","Female","Car driver",15303
+"17-25","Female","Car passenger",7181
+"17-25","Female","Car unknown position",900
+"17-25","Female","Heavy transport",45
+"17-25","Female","Motorcyclist",1971
+"17-25","Female","Other or unknown",410
+"17-25","Female","Pedal cyclist",1493
+"17-25","Female","Pedestrian",1736
+"17-25","Female","Pick-up truck or van occupant",150
+"17-25","Male","Bus occupant",88
+"17-25","Male","Car driver",17152
+"17-25","Male","Car passenger",6771
+"17-25","Male","Car unknown position",1127
+"17-25","Male","Heavy transport",453
+"17-25","Male","Motorcyclist",20455
+"17-25","Male","Other or unknown",808
+"17-25","Male","Pedal cyclist",6203
+"17-25","Male","Pedestrian",2774
+"17-25","Male","Pick-up truck or van occupant",603
+"26-39","Female","Bus occupant",143
+"26-39","Female","Car driver",16306
+"26-39","Female","Car passenger",5160
+"26-39","Female","Car unknown position",1054
+"26-39","Female","Heavy transport",73
+"26-39","Female","Motorcyclist",2500
+"26-39","Female","Other or unknown",436
+"26-39","Female","Pedal cyclist",3670
+"26-39","Female","Pedestrian",1910
+"26-39","Female","Pick-up truck or van occupant",120
+"26-39","Male","Bus occupant",125
+"26-39","Male","Car driver",18051
+"26-39","Male","Car passenger",3959
+"26-39","Male","Car unknown position",1194
+"26-39","Male","Heavy transport",1335
+"26-39","Male","Motorcyclist",23239
+"26-39","Male","Other or unknown",912
+"26-39","Male","Pedal cyclist",12440
+"26-39","Male","Pedestrian",3128
+"26-39","Male","Pick-up truck or van occupant",588
+"40-64","Female","Bus occupant",435
+"40-64","Female","Car driver",21012
+"40-64","Female","Car passenger",6764
+"40-64","Female","Car unknown position",1254
+"40-64","Female","Heavy transport",144
+"40-64","Female","Motorcyclist",3807
+"40-64","Female","Other or unknown",730
+"40-64","Female","Pedal cyclist",6628
+"40-64","Female","Pedestrian",3182
+"40-64","Female","Pick-up truck or van occupant",173
+"40-64","Male","Bus occupant",305
+"40-64","Male","Car driver",21013
+"40-64","Male","Car passenger",3244
+"40-64","Male","Car unknown position",1376
+"40-64","Male","Heavy transport",3018
+"40-64","Male","Motorcyclist",29414
+"40-64","Male","Other or unknown",1398
+"40-64","Male","Pedal cyclist",23379
+"40-64","Male","Pedestrian",3901
+"40-64","Male","Pick-up truck or van occupant",838
+"65-74","Female","Bus occupant",235
+"65-74","Female","Car driver",5611
+"65-74","Female","Car passenger",2840
+"65-74","Female","Car unknown position",361
+"65-74","Female","Heavy transport",25
+"65-74","Female","Motorcyclist",263
+"65-74","Female","Other or unknown",203
+"65-74","Female","Pedal cyclist",1149
+"65-74","Female","Pedestrian",1487
+"65-74","Female","Pick-up truck or van occupant",39
+"65-74","Male","Bus occupant",149
+"65-74","Male","Car driver",5543
+"65-74","Male","Car passenger",809
+"65-74","Male","Car unknown position",275
+"65-74","Male","Heavy transport",317
+"65-74","Male","Motorcyclist",2810
+"65-74","Male","Other or unknown",313
+"65-74","Male","Pedal cyclist",3907
+"65-74","Male","Pedestrian",1224
+"65-74","Male","Pick-up truck or van occupant",151
+"75+","Female","Bus occupant",538
+"75+","Female","Car driver",5676
+"75+","Female","Car passenger",3445
+"75+","Female","Car unknown position",371
+"75+","Female","Heavy transport",20
+"75+","Female","Motorcyclist",106
+"75+","Female","Other or unknown",269
+"75+","Female","Pedal cyclist",230
+"75+","Female","Pedestrian",1890
+"75+","Female","Pick-up truck or van occupant",27
+"75+","Male","Bus occupant",190
+"75+","Male","Car driver",6495
+"75+","Male","Car passenger",1076
+"75+","Male","Car unknown position",288
+"75+","Male","Heavy transport",49
+"75+","Male","Motorcyclist",775
+"75+","Male","Other or unknown",269
+"75+","Male","Pedal cyclist",1534
+"75+","Male","Pedestrian",1741
+"75+","Male","Pick-up truck or van occupant",73
+"8-16","Female","Bus occupant",63
+"8-16","Female","Car driver",247
+"8-16","Female","Car passenger",3541
+"8-16","Female","Car unknown position",148
+"8-16","Female","Heavy transport",8
+"8-16","Female","Motorcyclist",624
+"8-16","Female","Other or unknown",101
+"8-16","Female","Pedal cyclist",1831
+"8-16","Female","Pedestrian",1222
+"8-16","Female","Pick-up truck or van occupant",35
+"8-16","Male","Bus occupant",50
+"8-16","Male","Car driver",402
+"8-16","Male","Car passenger",2957
+"8-16","Male","Car unknown position",153
+"8-16","Male","Heavy transport",34
+"8-16","Male","Motorcyclist",4514
+"8-16","Male","Other or unknown",234
+"8-16","Male","Pedal cyclist",9068
+"8-16","Male","Pedestrian",1959
+"8-16","Male","Pick-up truck or van occupant",61
